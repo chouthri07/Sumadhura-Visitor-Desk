@@ -10,6 +10,7 @@ import 'providers/visitor_store.dart';
 class VisitorBootstrap extends StatefulWidget {
   const VisitorBootstrap({super.key, required this.preferences});
   final SharedPreferences preferences;
+  
   @override
   State<VisitorBootstrap> createState() => _VisitorBootstrapState();
 }
