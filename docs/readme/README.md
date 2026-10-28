@@ -1,11 +1,13 @@
 # Screenshots
 
-These are real captures of the Flutter web build in Chrome at a mobile viewport, using test data and local demo mode.
+The five images in `../screenshots/` were supplied in two WhatsApp ZIP archives and captured on a Redmi Android phone.
 
-- 01-dashboard.png: dashboard after a completed test visit.
-- 02-visitors.png: visitor listing.
-- 03-registration.png: registration form populated with test data.
-- 04-visitor-pass.png: registered visitor and generated QR.
-- 05-scanner.png: scanner with camera unavailable in headless Chrome; manual ID lookup remains available.
+- [Dashboard](../screenshots/redmi-dashboard.jpeg)
+- [Visitors](../screenshots/redmi-visitors.jpeg)
+- [Registration form](../screenshots/redmi-registration.jpeg)
+- [QR scanner](../screenshots/redmi-scanner.jpeg)
+- [Visitor pass](../screenshots/redmi-visitor-pass.jpeg)
 
-Physical Android camera verification remains required. These images do not claim live REST verification.
+The dashboard and visitor list show local demo mode. The scanner image shows the scanner screen, not proof of a successful QR scan. These images do not claim live REST verification.
+
+See the [main README](../../README.md#screenshots-redmi-android) for the image gallery.
