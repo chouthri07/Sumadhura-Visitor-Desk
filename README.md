@@ -1,6 +1,18 @@
-﻿# Sumadhura Visitor Desk
+# Sumadhura Visitor Desk
 
 Flutter Android application for front-desk visitor registration, QR passes and one-session entry/exit tracking.
+
+## Screenshots (Redmi Android)
+
+Screenshots captured on a Redmi Android phone. Click any image to view it at full size. The dashboard and visitor list show local demo mode.
+
+| Dashboard | Visitors | Register visitor |
+|:---:|:---:|:---:|
+| <a href="docs/screenshots/redmi-dashboard.jpeg"><img src="docs/screenshots/redmi-dashboard.jpeg" alt="Redmi Android visitor dashboard" width="240"></a> | <a href="docs/screenshots/redmi-visitors.jpeg"><img src="docs/screenshots/redmi-visitors.jpeg" alt="Visitor list with search and status filters" width="240"></a> | <a href="docs/screenshots/redmi-registration.jpeg"><img src="docs/screenshots/redmi-registration.jpeg" alt="Visitor registration form" width="240"></a> |
+
+| Scan visitor pass | Visitor QR pass |
+|:---:|:---:|
+| <a href="docs/screenshots/redmi-scanner.jpeg"><img src="docs/screenshots/redmi-scanner.jpeg" alt="QR scanner and manual visitor ID lookup" width="240"></a> | <a href="docs/screenshots/redmi-visitor-pass.jpeg"><img src="docs/screenshots/redmi-visitor-pass.jpeg" alt="Visitor QR pass showing checked out status" width="240"></a> |
 
 ## Run now
 
@@ -149,15 +161,15 @@ APK output: `build/app/outputs/flutter-apk/app-release.apk`. Release builds curr
 - `flutter test`: six tests passed (lifecycle persistence, metrics, QR validation, HTTP contract/error handling and registration UI).
 - `flutter build web`: passed.
 - Chrome browser flow: registered Rahul Sharma, opened QR pass, checked in and checked out successfully.
-- Screenshots in `docs/screenshots` are actual Chrome captures at a mobile viewport. The scanner screenshot demonstrates the camera-unavailable state in a headless browser, not a successful physical-camera scan.
+- The screenshots above were supplied from a Redmi Android phone. The scanner image shows the scanner screen; it does not by itself verify a successful QR scan.
 
 Android build configuration: Gradle 8.14.3, Android Gradle Plugin 8.11.1, Kotlin 2.2.20, minimum Android API 24. Initial Android builds may take several minutes while downloading Flutter engine and ML Kit artifacts.
 
 Sample API record: [docs/sample-visitor.json](docs/sample-visitor.json). Omit `id` when posting a new record; let the service generate it.
 
-[Dashboard](docs/screenshots/01-dashboard.png) | [Visitors](docs/screenshots/02-visitors.png) | [Registration](docs/screenshots/03-registration.png) | [Visitor pass](docs/screenshots/04-visitor-pass.png) | [Scanner](docs/screenshots/05-scanner.png)
+[Dashboard](docs/screenshots/redmi-dashboard.jpeg) | [Visitors](docs/screenshots/redmi-visitors.jpeg) | [Registration](docs/screenshots/redmi-registration.jpeg) | [Visitor pass](docs/screenshots/redmi-visitor-pass.jpeg) | [Scanner](docs/screenshots/redmi-scanner.jpeg)
 
 
 Android release APK: successfully built at build/app/outputs/flutter-apk/app-release.apk (69,550,079 bytes). Android lint was skipped as described in docs/verification.md.
 
-Android emulator installation and launch also passed; see [native dashboard capture](docs/screenshots/android-dashboard.png).
+Android emulator installation and launch also passed; see the [Redmi dashboard capture](docs/screenshots/redmi-dashboard.jpeg).
